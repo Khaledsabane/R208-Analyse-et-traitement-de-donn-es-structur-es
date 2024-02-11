@@ -1,7 +1,7 @@
 import sys
 if __name__=='__main__':
-    if len(argv)==1:
+    if len(sys.argv)==1:
         print(f"Pas assez d’arguments pour le script nom duscript")
-    elif len(argv) > 1:
-        for i in range(len(argv)):
+    elif len(sys.argv) > 1:
+        for i in range(len(sys.argv)):
             print(sys.argv[i])
