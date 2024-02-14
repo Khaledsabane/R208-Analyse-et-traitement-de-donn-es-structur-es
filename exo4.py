@@ -23,6 +23,6 @@ def recherche(dossier, fichier):
 
 
 if __name__== '__main__':
-    dossier=sys.argv[1]
-    fichier=sys.argv[2]
+    dossier=sys.argv[2]
+    fichier=sys.argv[4]
     recherche(dossier,fichier)
