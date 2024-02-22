@@ -14,6 +14,8 @@ if __name__=="__main__":
     print(f"Voiture {myCar2}")
     myCar1.ajouter_option('autoparking')
     myCar1.ajouter_option('autodriving')
+    myCar1.supprimer_option('autoparking')
     print(f"Voiture {myCar1}")
 
+print(f"Resultat de la recherche : {myCar1.is_option_present('autoparking')}")
 
