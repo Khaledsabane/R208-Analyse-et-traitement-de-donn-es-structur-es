@@ -31,6 +31,12 @@ class Voiture:
 
     def ajouter_option(self, opts) :
         self.__option.append(opts)
+    def supprimer_option(self, opts):
+        self.__option.remove(opts)
+    def is_option_present(self, opt):
+        return opt in self.__option
+
+
 
     def __str__(self):
         return f"Voici les caractéristiques de cette voiture: \n -Marque : {self.__marque} \n- Modele : {self.__modele} \n - Couleur : {self.__couleur} \n - puissance : {self.__puissance_Fiscale} \n- options : {self.__option}"
