@@ -1,18 +1,27 @@
-import sys
-import os
-if __name__=='__main__':
-    def affiche(dossier):
-        ''' cette fonction permet d'afficher le contenu d'un fichier '''
+import os,sys
+def affiche(dossier):
+    ''' cette fonction permet d'afficher le contenu d'un fichier '''
+    for i in os.listdir(dossier):
+        print(f"{i}")
+def aide(msg):
+    ''' cette fonction permet d'afficher les erreurs'''
+    print(msg)
 
-        if len(sys.argv)<2:
-            print(f"Pas assez d’arguments pour le script ")
-        elif os.path.exists(sys.argv[1]):
-            os.listdir(sys.argv[1])
-            for i in os.listdir(sys.argv[1]):
-                print(i)
+def start_find1():
+    '''  fonction permet l'affichage du programme  '''
+    if len(sys.argv)=<1:
+        aide("Pas assez d'arguments")
+    else:
+        if  os.path.exists(sys.argv[1]):
+            print(f"le dossier {sys.argv[1]} existe")
+            affiche(sys.argv[1])
         else:
-            print("fichier non existant")
+            aide("fichier non existant")
 
-dossier=sys.argv[1]
-affiche(dossier)
-help(affiche)
+
+if __name__=='__main__':
+    start_find1()
+
+
+
+
