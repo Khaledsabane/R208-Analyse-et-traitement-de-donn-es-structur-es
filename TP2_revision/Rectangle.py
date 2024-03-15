@@ -2,10 +2,7 @@ class Rectangle:
     def __init__(self,width,height):
         self._width=width
         self._height=height
-    def height1(self):
-        return self._height
-    def width1(self):
-        return self._width
+    
 
     def height(self,val):
         self.set_height(val)
